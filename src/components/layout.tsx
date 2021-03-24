@@ -1,9 +1,34 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import Dropdown from "./Dropdown"
+import Navbar from "./Navbar"
 
 const Layout: React.FC = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if (window.innerWidth > 768 && isOpen) {
+        setIsOpen(false)
+        console.log("I resized")
+      }
+    }
+    window.addEventListener("resize", hideMenu)
+
+    return () => {
+      window.removeEventListener("resize", hideMenu)
+    }
+  })
+
   return (
     <>
-      <main className="container w-100vw h-100vh bg-red">{children}</main>
+      <main className="bg-black h-screen">
+        <Navbar toggle={toggle} />
+        <Dropdown toggle={toggle} isOpen={isOpen} />
+        {children}
+      </main>
     </>
   )
 }
