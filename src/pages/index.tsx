@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="portfolio" />
-    <div className="container mx-auto pb-32">
+    <div className="container max-w-screen-md mx-auto pb-32">
       <About />
       <Projects />
       <Contact />
