@@ -14,17 +14,17 @@ const Dropdown: React.FC<Props> = ({ toggle, isOpen }) => {
           ? "grid grid-rows-4 text-center items-center text-white"
           : "hidden"
       }
-      // onClick={toggle}
+      onClick={toggle}
     >
-      <Link to="/about" className="p-4">
+      <a href="#about" className="p-4">
         about
-      </Link>
-      <Link to="/projects" className="p-4">
+      </a>
+      <a href="#projects" className="p-4">
         projects
-      </Link>
-      <Link to="/contact" className="p-4">
+      </a>
+      <a href="#contact" className="p-4">
         contact
-      </Link>
+      </a>
     </div>
   )
 }

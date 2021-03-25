@@ -24,7 +24,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <>
-      <main className="bg-black h-screen">
+      <main>
         <Navbar toggle={toggle} />
         <Dropdown toggle={toggle} isOpen={isOpen} />
         {children}

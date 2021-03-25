@@ -7,7 +7,7 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center text-white relative font-mono h-16">
+    <nav className="flex justify-between items-center text-white fixed w-full font-mono h-16 bg-black">
       <Link to="/" className="pl-8">
         casey.work
       </Link>
@@ -28,15 +28,15 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
         </svg>
       </div>
       <div className="pr-8 md:block hidden">
-        <Link to="/about" className="p-4">
+        <a href="#about" className="p-4">
           about
-        </Link>
-        <Link to="/projects" className="p-4">
+        </a>
+        <a href="#projects" className="p-4">
           projects
-        </Link>
-        <Link to="/contact" className="p-4">
+        </a>
+        <a href="#contact" className="p-4">
           contact
-        </Link>
+        </a>
       </div>
     </nav>
   )
