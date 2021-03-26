@@ -1,4 +1,5 @@
 import { Link } from "gatsby"
+import { FaGithub } from "react-icons/fa"
 import React from "react"
 
 interface Props {
@@ -27,7 +28,7 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
           />
         </svg>
       </div>
-      <div className="pr-4 md:block hidden">
+      <div className="pr-4 md:flex hidden">
         <a href="#about" className="p-4">
           about
         </a>
@@ -36,6 +37,14 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
         </a>
         <a href="#contact" className="p-4">
           contact
+        </a>
+        <a
+          href="https://github.com/caseyharvey"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-4"
+        >
+          <FaGithub className="w-6 h-6" />
         </a>
       </div>
     </nav>
