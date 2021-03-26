@@ -1,35 +1,36 @@
 import React from "react"
+import Heading from "../Heading"
+import ProjectCard from "../ProjectCard"
+import SectionHeading from "../SectionHeading"
 
-interface Props {}
-
-const About = (props: Props) => {
+const About = () => {
   return (
-    <section id="projects" className="text-white px-8">
-      <div className="pb-6 pt-32 text-xl">Projects</div>{" "}
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas
-        amet voluptates quod, incidunt hic vero quo. Laborum tempora voluptatem
-        rerum id neque odit at illum dolore, eveniet accusantium impedit
-        laboriosam quae excepturi voluptas, similique sapiente. Magni,
-        repudiandae nam laborum aliquid tenetur cum reprehenderit aut incidunt
-        explicabo, odit et delectus. Praesentium obcaecati at voluptatem hic
-        autem dolore. Perspiciatis omnis consequatur, sint sunt sit ut. Quasi
-        molestias dolor nostrum dicta, unde eligendi dolore nihil ab tempora
-        dolorem alias maiores necessitatibus id neque? Velit libero modi
-        aspernatur ipsa, maiores voluptatem delectus sint provident porro? Sint
-        consequatur, ipsum illo veritatis ratione animi sed laboriosam nam quam
-        cum quae quasi autem inventore, placeat ipsam fugit asperiores saepe
-        eaque aperiam harum, consequuntur perferendis odio quas. Molestias
-        voluptates sed repellendus dolores libero maxime quas voluptas non enim
-        eum suscipit iure doloremque dicta iusto eaque esse a eius, id dolorum.
-        Possimus saepe doloremque eius vitae animi soluta facere! Minus
-        molestiae soluta necessitatibus voluptate animi illum exercitationem
-        veritatis voluptas enim nemo dolorum voluptatum numquam similique sint
-        in eligendi, aut dolore natus totam! Obcaecati quae, delectus esse natus
-        temporibus voluptatem magnam, nemo voluptate fuga, nam velit ducimus
-        saepe explicabo! Molestias quibusdam, dolore iusto eos enim provident.
-        Quisquam, illo ab.
-      </p>
+    <section id="projects" className="pt-16">
+      <SectionHeading heading="Projects" />
+      <Heading heading="TimeIsMoney" tagline="DollarValueTimer" />
+      <ProjectCard
+        linkOne="The App"
+        linkTwo="The Code"
+        info="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+          consectetur vitae quae libero iure molestias pariatur repellat,
+          cupiditate voluptatum aperiam atque dolores at, minus facere voluptas
+          officiis maxime hic cumque? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptates necessitatibus rerum ex, enim tenetur
+          ipsa, voluptatibus doloribus, consectetur dolor commodi alias?
+          Doloremque fuga officiis qui eos non aliquam sint ipsam?"
+      />
+      <Heading heading="UmbleJay" tagline="LanguageConverter" />
+      <ProjectCard
+        linkOne="The App"
+        linkTwo="The Code"
+        info="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+          consectetur vitae quae libero iure molestias pariatur repellat,
+          cupiditate voluptatum aperiam atque dolores at, minus facere voluptas
+          officiis maxime hic cumque? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptates necessitatibus rerum ex, enim tenetur
+          ipsa, voluptatibus doloribus, consectetur dolor commodi alias?
+          Doloremque fuga officiis qui eos non aliquam sint ipsam?"
+      />
     </section>
   )
 }

@@ -6,7 +6,7 @@ interface Props {
 
 const SectionHeading: React.FC<Props> = ({ heading }) => {
   return (
-    <div className="font-mono font-black m-8 p-4 mt-16 text-7xl text-right bg-darkGray">
+    <div className="m-8 p-4 my-16 text-5xl text-right bg-darkGray">
       {heading}
     </div>
   )

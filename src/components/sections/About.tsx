@@ -5,8 +5,8 @@ import SectionHeading from "../SectionHeading"
 const About = () => {
   return (
     <section id="about" className="pt-16">
-      <SectionHeading heading="about" />
-      <Heading heading="casey harvey" tagline="software developer" />
+      <SectionHeading heading="About" />
+      <Heading heading="CaseyHarvey" tagline="SoftwareDeveloper" />
       <div className="p-8">
         <p>
           I love developing software and writing code. The whole process is
