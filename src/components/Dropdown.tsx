@@ -11,7 +11,7 @@ const Dropdown: React.FC<Props> = ({ toggle, isOpen }) => {
     <div
       className={
         isOpen
-          ? "grid grid-rows-5 p-8 mt-16 text-right items-center text-white fixed w-full bg-black text-xl font-mono"
+          ? "grid grid-rows-5 p-8 mt-16 text-right items-center text-white fixed w-full bg-black text-xl shadow-2xl font-mono"
           : "hidden"
       }
       onClick={toggle}
