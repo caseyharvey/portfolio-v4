@@ -7,7 +7,7 @@ interface Props {
 
 const Heading: React.FC<Props> = ({ heading, tagline }) => {
   return (
-    <div className=" pb-6 pt-32 px-8 bg-gray-900">
+    <div className="p-8">
       <div className="text-4xl">{heading}</div>
       <div className="text-lg">{tagline}</div>
     </div>

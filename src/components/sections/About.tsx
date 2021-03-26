@@ -1,12 +1,12 @@
 import React from "react"
 import Heading from "../Heading"
+import SectionHeading from "../SectionHeading"
 
-interface Props {}
-
-const About = (props: Props) => {
+const About = () => {
   return (
-    <section id="about" className="text-white w-full">
-      <Heading heading="about me" tagline="casey harvey" />
+    <section id="about" className="pt-16">
+      <SectionHeading heading="about" />
+      <Heading heading="casey harvey" tagline="software developer" />
       <div className="p-8">
         <p>
           I love developing software and writing code. The whole process is

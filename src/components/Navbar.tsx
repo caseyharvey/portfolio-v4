@@ -7,11 +7,11 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center text-white max-w-screen-md mx-auto sticky top-0 w-full font-mono h-16 bg-black">
+    <nav className="flex justify-between items-center text-white max-w-screen-md mx-auto fixed top-0 w-full font-mono h-16 bg-black">
       <Link to="/" className="pl-8">
         casey.work
       </Link>
-      <div className="cursor-pointer px-4 md:hidden" onClick={toggle}>
+      <div className="cursor-pointer pr-8 md:hidden" onClick={toggle}>
         <svg
           className="w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"

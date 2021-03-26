@@ -27,7 +27,9 @@ const Layout: React.FC = ({ children }) => {
       <main>
         <Navbar toggle={toggle} />
         <Dropdown toggle={toggle} isOpen={isOpen} />
-        {children}
+        <div className="container max-w-screen-md mx-auto pb-32 text-white">
+          {children}
+        </div>
       </main>
     </>
   )
