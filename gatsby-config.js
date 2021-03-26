@@ -11,5 +11,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
+    },
   ],
 }
