@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { FaGithub } from "react-icons/fa"
 
 interface Props {
   toggle: () => void
@@ -24,6 +24,15 @@ const Dropdown: React.FC<Props> = ({ toggle, isOpen }) => {
       </a>
       <a href="#contact" className="py-4">
         contact
+      </a>
+      <div></div>
+      <a
+        href="https://github.com/caseyharvey"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="justify-self-end"
+      >
+        <FaGithub className="w-6 h-6" />
       </a>
     </div>
   )
