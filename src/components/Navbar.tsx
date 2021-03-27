@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import { FaGithub } from "react-icons/fa"
 import React from "react"
+import ThemeToggle from "./ThemeToggle"
 
 interface Props {
   toggle: () => void
@@ -9,7 +10,7 @@ interface Props {
 const Navbar: React.FC<Props> = ({ toggle }) => {
   return (
     <nav className="flex justify-between items-center text-white max-w-screen-md mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 bg-black text-lg">
-      <Link to="/" className="pl-8">
+      <Link to="/" className="pl-8 hover:text-yellow-500">
         casey.work
       </Link>
       <div className="cursor-pointer pr-8 md:hidden" onClick={toggle}>
@@ -29,13 +30,13 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
         </svg>
       </div>
       <div className="pr-4 md:flex hidden">
-        <a href="#about" className="p-4">
+        <a href="#about" className="p-4 hover:text-yellow-500">
           about
         </a>
-        <a href="#projects" className="p-4">
+        <a href="#projects" className="p-4 hover:text-yellow-500">
           projects
         </a>
-        <a href="#contact" className="p-4">
+        <a href="#contact" className="p-4 hover:text-yellow-500">
           contact
         </a>
         <a
@@ -44,8 +45,9 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
           rel="noopener noreferrer"
           className="p-4"
         >
-          <FaGithub className="w-6 h-6" />
+          <FaGithub className="w-6 h-6 hover:text-yellow-500" />
         </a>
+        <ThemeToggle />
       </div>
     </nav>
   )

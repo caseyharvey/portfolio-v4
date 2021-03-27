@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
