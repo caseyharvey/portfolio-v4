@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+body {
+  background: rgb(255, 255, 255);
+}
+body.dark {
   background: #000;
 }

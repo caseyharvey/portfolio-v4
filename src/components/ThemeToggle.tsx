@@ -1,6 +1,6 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import { CgDarkMode } from "react-icons/cg"
+import { VscColorMode } from "react-icons/vsc"
 
 interface Props {
   theme: string
@@ -18,8 +18,8 @@ const ThemeToggle: React.FC<Props> = () => {
             onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
             checked={theme === "dark"}
           />
-          <div className="p-4">
-            <CgDarkMode className="w-7 h-7 hover:text-yellow-500" />
+          <div className="pl-6">
+            <VscColorMode className="w-5 h-5 hover:text-gray-500 dark:hover:text-yellow-500" />
           </div>
         </label>
       )}

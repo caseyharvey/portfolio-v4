@@ -1,5 +1,6 @@
 import React from "react"
 import { FaGithub } from "react-icons/fa"
+import ThemeToggle from "./ThemeToggle"
 
 interface Props {
   toggle: () => void
@@ -11,7 +12,7 @@ const Dropdown: React.FC<Props> = ({ toggle, isOpen }) => {
     <div
       className={
         isOpen
-          ? "grid grid-rows-6 p-8 mt-16 text-right items-center text-white fixed w-full bg-black text-xl shadow-2xl font-mono"
+          ? "grid grid-rows-5 p-8 mt-16 text-right items-center dark:text-white text-black fixed w-full dark:bg-black bg-white text-xl shadow-2xl font-mono"
           : "hidden"
       }
       onClick={toggle}

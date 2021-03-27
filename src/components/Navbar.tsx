@@ -9,10 +9,16 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center text-white max-w-screen-md mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 bg-black text-lg">
-      <Link to="/" className="pl-8 hover:text-yellow-500">
-        casey.work
-      </Link>
+    <nav className="flex justify-between items-center dark:text-white text-black max-w-screen-md mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 dark:bg-black bg-white text-lg">
+      <div className="flex items-center">
+        <Link
+          to="/"
+          className="pl-8 hover:text-gray-500 dark:hover:text-yellow-500"
+        >
+          casey.work
+        </Link>
+        <ThemeToggle />
+      </div>
       <div className="cursor-pointer pr-8 md:hidden" onClick={toggle}>
         <svg
           className="w-6 h-6"
@@ -30,13 +36,22 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
         </svg>
       </div>
       <div className="pr-4 md:flex hidden">
-        <a href="#about" className="p-4 hover:text-yellow-500">
+        <a
+          href="#about"
+          className="p-4 hover:text-gray-500 dark:hover:text-yellow-500"
+        >
           about
         </a>
-        <a href="#projects" className="p-4 hover:text-yellow-500">
+        <a
+          href="#projects"
+          className="p-4 hover:text-gray-500 dark:hover:text-yellow-500"
+        >
           projects
         </a>
-        <a href="#contact" className="p-4 hover:text-yellow-500">
+        <a
+          href="#contact"
+          className="p-4 hover:text-gray-500 dark:hover:text-yellow-500"
+        >
           contact
         </a>
         <a
@@ -45,9 +60,8 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
           rel="noopener noreferrer"
           className="p-4"
         >
-          <FaGithub className="w-6 h-6 hover:text-yellow-500" />
+          <FaGithub className="w-6 h-6 hover:text-gray-500 dark:hover:text-yellow-500" />
         </a>
-        <ThemeToggle />
       </div>
     </nav>
   )
