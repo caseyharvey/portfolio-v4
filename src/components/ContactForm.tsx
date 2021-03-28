@@ -70,7 +70,7 @@ const ContactForm: React.FC = () => {
           name="email"
           autoComplete="off"
           placeholder="Email"
-          className="formElement"
+          className="formElement "
           ref={register({
             required: true,
             pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$/,
@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
           autoCorrect="off"
           autoComplete="off"
           placeholder="Message"
-          className="formElement"
+          className="formElement resize-none"
           ref={register({ required: true, maxLength: 500 })}
         />
         {errors.message && errors.message.type === "required" && (
@@ -99,12 +99,14 @@ const ContactForm: React.FC = () => {
         )}
 
         <input
-          className="formElement bg-white border-2 border-gray-300"
+          className="formElement"
           disabled={serverState.submitting}
           type="submit"
         />
         {serverState.status && (
-          <span className={!serverState.status.success ? "error" : "msg-sent"}>
+          <span
+            className={!serverState.status.success ? "error" : "text-center"}
+          >
             {serverState.status.message}
           </span>
         )}
