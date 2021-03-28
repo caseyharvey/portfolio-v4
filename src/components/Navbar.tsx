@@ -9,11 +9,11 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center dark:text-white text-black max-w-screen-md mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 dark:bg-black bg-white text-lg">
+    <nav className="flex justify-between items-center darkMode max-w-screen-md mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 text-lg">
       <div className="flex items-center">
         <Link
           to="/"
-          className="pl-8 hover:text-gray-500 dark:hover:text-yellow-500"
+          className="pl-8 hover:text-lightHover dark:hover:text-darkHover"
         >
           casey.work
         </Link>
@@ -38,19 +38,19 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
       <div className="pr-4 md:flex hidden">
         <a
           href="#about"
-          className="p-4 hover:text-gray-500 dark:hover:text-yellow-500"
+          className="p-4 hover:text-lightHover dark:hover:text-darkHover"
         >
           about
         </a>
         <a
           href="#projects"
-          className="p-4 hover:text-gray-500 dark:hover:text-yellow-500"
+          className="p-4 hover:text-lightHover dark:hover:text-darkHover"
         >
           projects
         </a>
         <a
           href="#contact"
-          className="p-4 hover:text-gray-500 dark:hover:text-yellow-500"
+          className="p-4 hover:text-lightHover dark:hover:text-darkHover"
         >
           contact
         </a>
@@ -60,7 +60,7 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
           rel="noopener noreferrer"
           className="p-4"
         >
-          <FaGithub className="w-6 h-6 hover:text-gray-500 dark:hover:text-yellow-500" />
+          <FaGithub className="w-6 h-6 hover:text-lightHover dark:hover:text-darkHover" />
         </a>
       </div>
     </nav>

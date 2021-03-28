@@ -19,7 +19,7 @@ const ThemeToggle: React.FC<Props> = () => {
             checked={theme === "dark"}
           />
           <div className="pl-6">
-            <VscColorMode className="w-5 h-5 hover:text-gray-500 dark:hover:text-yellow-500" />
+            <VscColorMode className="w-5 h-5 hover:text-lightHover dark:hover:text-darkHover" />
           </div>
         </label>
       )}

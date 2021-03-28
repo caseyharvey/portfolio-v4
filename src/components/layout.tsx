@@ -24,10 +24,10 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <>
-      <main className="bg-white dark:bg-black">
+      <main>
         <Navbar toggle={toggle} />
         <Dropdown toggle={toggle} isOpen={isOpen} />
-        <div className="container max-w-screen-md mx-auto pb-32 dark:text-white text-black text-lg">
+        <div className="container max-w-screen-md mx-auto pb-32 darkMode text-lg">
           {children}
         </div>
       </main>
