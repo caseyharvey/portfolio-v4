@@ -3,11 +3,11 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { VscColorMode } from "react-icons/vsc"
 
 interface Props {
-  theme: string
-  toggleTheme: (theme: string) => string
+  theme?: any
+  toggleTheme?: any
 }
 
-const ThemeToggle: React.FC<Props> = () => {
+const ThemeToggle = (Props: Props) => {
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }: Props) => (
