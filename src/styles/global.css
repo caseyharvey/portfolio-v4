@@ -5,6 +5,7 @@
 
 body {
   background: white;
+  min-width: 280px;
 }
 
 body.dark {

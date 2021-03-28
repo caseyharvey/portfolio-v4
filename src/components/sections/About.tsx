@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="pt-16">
       <SectionHeading heading="About" />
       <Heading heading="CaseyHarvey" tagline="SoftwareDeveloper" />
-      <div className="p-8">
+      <div className="py-8 px-4 sm:px-8">
         <p>
           I love developing software and writing code. The whole process is
           deeply satisfying and never ending. There is always something new to

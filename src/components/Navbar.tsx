@@ -13,13 +13,13 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
       <div className="flex items-center">
         <Link
           to="/"
-          className="pl-8 hover:text-lightHover dark:hover:text-darkHover"
+          className="pl-4 sm:pl-8 hover:text-lightHover dark:hover:text-darkHover"
         >
           casey.work
         </Link>
         <ThemeToggle />
       </div>
-      <div className="cursor-pointer pr-8 md:hidden" onClick={toggle}>
+      <div className="cursor-pointer pr-4 sm:pr-8 md:hidden" onClick={toggle}>
         <svg
           className="w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"

@@ -9,7 +9,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ linkOne, linkTwo, info }) => {
   return (
-    <div className="px-8">
+    <div className="px-4 sm:px-8">
       <div className="flex justify-between ">
         <Button text={linkOne} />
         <div className="px-2"></div>
