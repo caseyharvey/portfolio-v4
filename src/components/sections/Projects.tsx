@@ -9,27 +9,19 @@ const About = () => {
       <SectionHeading heading="Projects" />
       <Heading heading="TimeIsMoney" tagline="DollarValueTimer" />
       <ProjectCard
-        linkOne="The App"
-        linkTwo="The Code"
-        info="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
-          consectetur vitae quae libero iure molestias pariatur repellat,
-          cupiditate voluptatum aperiam atque dolores at, minus facere voluptas
-          officiis maxime hic cumque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptates necessitatibus rerum ex, enim tenetur
-          ipsa, voluptatibus doloribus, consectetur dolor commodi alias?
-          Doloremque fuga officiis qui eos non aliquam sint ipsam?"
+        nameOne="The App"
+        nameTwo="The Code"
+        linkOne="https://timeismoney.casey.work/"
+        linkTwo="https://github.com/caseyharvey/time-is-money"
+        info="I built this app as a way to keep track of time while I study. We all know how precious time is but we don't always use it for things that matter. This app can help you clarify whats important in your life by giving it a dollar value."
       />
       <Heading heading="UmbleJay" tagline="LanguageConverter" />
       <ProjectCard
-        linkOne="The App"
-        linkTwo="The Code"
-        info="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
-          consectetur vitae quae libero iure molestias pariatur repellat,
-          cupiditate voluptatum aperiam atque dolores at, minus facere voluptas
-          officiis maxime hic cumque? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptates necessitatibus rerum ex, enim tenetur
-          ipsa, voluptatibus doloribus, consectetur dolor commodi alias?
-          Doloremque fuga officiis qui eos non aliquam sint ipsam?"
+        nameOne="The App"
+        nameTwo="The Code"
+        linkOne="https://umblejay.casey.work/"
+        linkTwo="https://github.com/caseyharvey/umblejay"
+        info="This is pig latin converter. After seeing many people attempt to program this idea without truly succeeding, I wrote an algorithm to handle the conversion properly. The first attempt was done a while ago and I have since refactored it and turned in into a react app."
       />
     </section>
   )

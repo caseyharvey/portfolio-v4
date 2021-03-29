@@ -99,7 +99,7 @@ const ContactForm: React.FC = () => {
         )}
 
         <input
-          className="formElement"
+          className="formElement btn"
           disabled={serverState.submitting}
           type="submit"
         />

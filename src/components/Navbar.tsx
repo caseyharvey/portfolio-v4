@@ -9,7 +9,7 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ toggle }) => {
   return (
-    <nav className="flex justify-between items-center darkMode max-w-screen-md mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 text-lg">
+    <nav className="flex justify-between items-center darkMode max-w-screen-sm mx-auto inset-x-0 fixed top-0 w-full font-mono h-16 text-lg">
       <div className="flex items-center">
         <Link
           to="/"
